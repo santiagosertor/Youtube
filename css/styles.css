@@ -17,6 +17,7 @@ body{
     "header header"
     "sidebar content";
     height: 100vh;
+   
 
 }
 
@@ -52,6 +53,10 @@ i{
 p,a{
     font-size: 0.9rem;
 }
+::-webkit-scrollbar{
+    width: 8px;
+
+}
 
 img{
     position: absolute;
@@ -62,6 +67,14 @@ img{
     object-fit: contain;
 }
 
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background-color: #717171;
+}
 .header{
     width: 100%;
     height: 56px;
@@ -190,6 +203,8 @@ img{
     grid-area: sidebar;
     background-color: #121212;
     padding-top: 10px;
+    overflow-x: scroll;
+     
     
 }
 
@@ -221,4 +236,5 @@ img{
 
 .container{
     grid-area: container;
+ 
 }

@@ -203,7 +203,7 @@ img{
     grid-area: sidebar;
     background-color: #121212;
     padding-top: 10px;
-    overflow-x: scroll;
+    overflow-y: scroll;
      
     
 }

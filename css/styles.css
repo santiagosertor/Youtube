@@ -279,3 +279,91 @@ img{
     background-color: #d4d4d4;
   
 }
+
+.video-container{
+    display: grid;
+    /* grid-template-columns: repeat(4 , 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    /* grid-template-rows: repeat(auto-fill, minmax(200px,5fr)); */
+    grid-template-rows: max-content;
+    gap: 18px;
+    padding: 20px;
+    background-color: #181818;
+    overflow-y:scroll ;
+    height: calc(100vh - 118px);
+}
+
+.video-container-cover{
+    position: relative;
+    transition: 0.5s;
+}
+
+.video-content{
+
+    margin-bottom: 25px;
+    position: relative;
+    width:100%;
+    padding: 8px;
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.video-content:hover{
+    background-color: #373737;
+    
+}
+
+.video-box{
+    position: relative;
+    width: auto;
+    height: 145px;
+    display: block;
+}
+
+.video-box img{
+    object-fit: cover;
+    border-radius: 12px;
+    
+
+}
+
+.video-detalle{
+    display: flex;
+    color: #fff;
+    padding-top: 12px;
+}
+
+.chanel-logo{
+    position: relative;
+    min-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.detail{
+    margin-left: 12px;
+}
+.title{
+ font-size: 0.9rem;
+
+}
+
+.canal-name{
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: #aaa;
+
+}
+
+.views-updolad{
+    display: flex;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    color: #aaa;
+
+}
+
+.updolad{
+    margin-left: 6px;
+}

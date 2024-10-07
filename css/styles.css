@@ -87,6 +87,7 @@ img{
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    gap: 6px;
 }
 
 /* logo de youtube*/
@@ -366,4 +367,30 @@ img{
 
 .updolad{
     margin-left: 6px;
+}
+
+@media(max-width:1200px){
+    body{
+        grid-template-columns: 70px, 1fr;
+    }
+    .sidebar-item span .sidebar-item h4{
+        display: none;
+    }
+    .sidebar-items {
+        padding: 0;
+    }
+    .sidebar-item{
+        padding: 0 20px;
+    }
+
+    .chips-warpper{
+        width: calc(100vw - 118px);
+    }
+
+}
+
+@media(max-width:800px){
+    .serch-container{
+        display: none;
+    }
 }
